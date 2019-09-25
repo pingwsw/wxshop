@@ -1,1 +1,6 @@
 /* pages/home/home.wxss */
+.popular image{
+  width: 100%;
+}
+
+
