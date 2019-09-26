@@ -5,3 +5,11 @@
   <image src="/assets/home/popular_bg.jpg" mode="widthFix"/>
 </view>
 <my-tab-control list="{{tabData}}" bind:click="handleTabClick"/>
+
+<view class="goods">
+  <block wx:for="{{goodsList}}" wx:key="{{index}}">
+    <my-goods-item class="item" bean="{{item}}" />
+  </block>
+</view>
+
+

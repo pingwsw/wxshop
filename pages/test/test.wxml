@@ -1,0 +1,7 @@
+<!--pages/test/test.wxml-->
+<text>123</text>
+<image src="/assets/common/favor.png"></image>
+<view style="text-align:center;display:flex;">
+<text style="flex:1;">hahahahahahahahaha</text>
+<image  style="flex:1;" src="/assets/common/favor.png"></image>
+</view>

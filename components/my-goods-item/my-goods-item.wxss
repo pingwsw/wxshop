@@ -1,0 +1,34 @@
+/* components/my-goods-item/my-goods-item.wxss */
+.goods-item > image{
+  width: 100%;
+  border-radius: 10rpx;
+}
+.title{
+  padding: 10rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+.favicon{
+  width: 28rpx;
+  height: 28rpx;
+  padding: 0 4px 0 10px;
+  position: relative;
+  top:3rpx;
+}
+.desc-info{
+  font-size: 28rpx;
+  position: absolute;
+  left:0;
+  right:0;
+  bottom: 5rpx;
+}
+.price{
+  color:#ff5777;
+}
+.desc-info > view{
+  padding: 10rpx;
+  text-align: center;
+  line-height: 28rpx;
+}

@@ -2,5 +2,17 @@
 .popular image{
   width: 100%;
 }
+.goods{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.item{
+  width: 48%;
+  border-radius: 10rpx;
+  position: relative;
+  height: 500rpx;
+  margin-top: 16rpx;
+}
 
 

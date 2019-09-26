@@ -41,7 +41,48 @@ Page({
     ],
     tabData:[
       '流行','新款','精选'
+    ],
+    goodsList:[
+      {
+        image: "https://img.alicdn.com/bao/uploaded/i3/1122110005/O1CN01cixZMU1BuKXaZ7PG4_!!1122110005.jpg",
+        title: 'JackJones杰克琼斯男初秋季新百搭休闲运动卫衣男',
+        price: 90.56,
+        favnum: 10  
+      },
+      {
+        image: "http://wx4.sinaimg.cn/large/d2e27164gy1fdg0631x1vj21hc0xo7of.jpg",
+        title: 'JackJones杰克琼斯男初秋季新百搭休闲运动卫衣男',
+        price: 33.56,
+        favnum: 20
+      },
+      {
+        image: "http://wx4.sinaimg.cn/large/d2e27164gy1fdg0631x1vj21hc0xo7of.jpg",
+        title: 'JackJones杰克琼斯男初秋季新百搭休闲运动卫衣男',
+        price: 44.56,
+        favnum: 30
+      },
+      {
+        image: "https://img.alicdn.com/bao/uploaded/i3/1122110005/O1CN01cixZMU1BuKXaZ7PG4_!!1122110005.jpg",
+        title: 'JackJones杰克琼斯男初秋季新百搭休闲运动卫衣男',
+        price: 55.56,
+        favnum: 40
+      }
+      ,
+      {
+        image: "http://wx4.sinaimg.cn/large/d2e27164gy1fdg0631x1vj21hc0xo7of.jpg",
+        title: 'JackJones杰克琼斯男初秋季新百搭休闲运动卫衣男',
+        price: 44.56,
+        favnum: 30
+      },
+      {
+        image: "https://img.alicdn.com/bao/uploaded/i3/1122110005/O1CN01cixZMU1BuKXaZ7PG4_!!1122110005.jpg",
+        title: 'JackJones杰克琼斯男初秋季新百搭休闲运动卫衣男',
+        price: 55.56,
+        favnum: 40
+      }
+  
     ]
+    
 
   },
 
