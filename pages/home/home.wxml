@@ -1,11 +1,11 @@
 <!--pages/home/home.wxml-->
 <my-swiper list="{{banners}}"/>
-<my-recommend list="{{recommends}}" />
+<my-recommend list="{{recommends}}" bind:getTop="getTop" />
 <view class="popular">
   <image src="/assets/home/popular_bg.jpg" mode="widthFix"/>
 </view>
-<my-tab-control list="{{tabData}}" bind:click="handleTabClick"/>
-
+<my-tab-control list="{{tabData}}" bind:click="handleTabClick" id="tab-control" class="{{isFix?'fixed':''}}"/>
+<view  style ="height:88rpx" hidden="{{!isFix}}"></view> 
 <view class="goods">
   <block wx:for="{{goodsList}}" wx:key="{{index}}">
     <my-goods-item class="item" bean="{{item}}" />

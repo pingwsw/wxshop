@@ -80,12 +80,56 @@ Page({
         price: 55.56,
         favnum: 40
       }
+      ,
+      {
+        image: "http://wx4.sinaimg.cn/large/d2e27164gy1fdg0631x1vj21hc0xo7of.jpg",
+        title: 'JackJones杰克琼斯男初秋季新百搭休闲运动卫衣男',
+        price: 44.56,
+        favnum: 30
+      },
+      {
+        image: "https://img.alicdn.com/bao/uploaded/i3/1122110005/O1CN01cixZMU1BuKXaZ7PG4_!!1122110005.jpg",
+        title: 'JackJones杰克琼斯男初秋季新百搭休闲运动卫衣男',
+        price: 55.56,
+        favnum: 40
+      }
+      ,
+      {
+        image: "http://wx4.sinaimg.cn/large/d2e27164gy1fdg0631x1vj21hc0xo7of.jpg",
+        title: 'JackJones杰克琼斯男初秋季新百搭休闲运动卫衣男',
+        price: 44.56,
+        favnum: 30
+      },
+      {
+        image: "https://img.alicdn.com/bao/uploaded/i3/1122110005/O1CN01cixZMU1BuKXaZ7PG4_!!1122110005.jpg",
+        title: 'JackJones杰克琼斯男初秋季新百搭休闲运动卫衣男',
+        price: 55.56,
+        favnum: 40
+      }
   
-    ]
-    
+    ],
+    isFix:false,
+    tabControlTop:0
 
   },
-
+  
+  onPageScroll: function(e) {
+    if(e.scrollTop >=this.data.tabControlTop){
+      if(!this.data.isFix){
+        console.log('fixed');
+        this.setData({
+          isFix:true
+        });
+      }
+    }else{
+      if(this.data.isFix){
+        console.log('恢复');
+        this.setData({
+          isFix: false
+        });
+      }
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -104,7 +148,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-
+    
   },
 
   /**
@@ -141,9 +185,13 @@ Page({
   onShareAppMessage: function() {
 
   },
+ 
   handleTabClick:function(event){
     console.log(event);
     console.log(event.detail.index);
     console.log(event.detail.title);
+  },
+  getTop:function(event){
+    this.data.tabControlTop =event.detail.top;
   }
 })
