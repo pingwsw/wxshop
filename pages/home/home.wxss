@@ -1,4 +1,8 @@
 /* pages/home/home.wxss */
+#container{
+  height: 100vh;
+}
+
 .popular image{
   width: 100%;
 }
@@ -21,6 +25,15 @@
   right:0;
   background: white;
   z-index:1;
+}
+.back-top{
+  position: fixed;
+  right: 16rpx;
+  bottom: 10rpx;
+}
+.back-top image{
+  width: 90rpx;
+  height: 90rpx;
 }
 
 

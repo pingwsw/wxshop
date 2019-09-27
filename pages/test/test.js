@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    showBackTop:false,
+    topPosition:0
   },
 
   /**
@@ -62,5 +63,26 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  onPageScroll:function(e){
+    
+     
+  },
+  handleBackTop:function(){
+    this.setData({
+      showBackTop:false,
+      topPosition:0
+    })
+  },
+  handleScroll:function(e){
+    if (e.detail.scrollTop > 500 && !this.data.showBackTop) {
+      this.setData({
+        showBackTop: true
+      })
+    } else if (e.detail.scrollTop <= 500 && this.data.showBackTop) {
+      this.setData({
+        showBackTop: false
+      })
+    }
   }
 })

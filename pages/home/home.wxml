@@ -11,5 +11,8 @@
     <my-goods-item class="item" bean="{{item}}" />
   </block>
 </view>
+<view class="back-top" wx:if="{{showBackTop}}" bindtap="handleBackTop">
+  <image src="/assets/common/top.png"></image>
+</view>
 
 

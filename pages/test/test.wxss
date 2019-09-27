@@ -1,1 +1,11 @@
 /* pages/test/test.wxss */
+.back-top{
+  position: fixed;
+  right: 16rpx;
+  bottom: 10rpx;
+  z-index: 2;
+}
+.back-top image{
+  width: 90rpx;
+  height: 90rpx;
+}

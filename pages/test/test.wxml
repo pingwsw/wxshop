@@ -1,7 +1,8 @@
 <!--pages/test/test.wxml-->
-<text>123</text>
-<image src="/assets/common/favor.png"></image>
-<view style="text-align:center;display:flex;">
-<text style="flex:1;">hahahahahahahahaha</text>
-<image  style="flex:1;" src="/assets/common/favor.png"></image>
-</view>
+<!-- scrollview回到顶部的代码练习-->
+<scroll-view scroll-y scroll-top="{{topPosition}}" scroll-with-animation style="height:100vh;" bindscroll="handleScroll">
+  <view  wx:for="{{200}}" style="height:50px;" wx:key="{{index}}">{{item}}</view>
+  <view  wx:if="{{showBackTop}}" class="back-top" bindtap="handleBackTop">
+    <image src="/assets/common/top.png"></image>
+  </view>
+  </scroll-view>

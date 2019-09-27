@@ -1,4 +1,7 @@
-// pages/home/home.js
+const POP = "pop";
+const SELL = "sell";
+const NEW = "new";
+const BACK_TOP_POSITION = 500;
 Page({
 
   /**
@@ -109,25 +112,37 @@ Page({
   
     ],
     isFix:false,
-    tabControlTop:0
-
+    tabControlTop:0,
+    showBackTop:false,
   },
   
   onPageScroll: function(e) {
-    if(e.scrollTop >=this.data.tabControlTop){
-      if(!this.data.isFix){
+    if (e.scrollTop >= this.data.tabControlTop) {
+      if (!this.data.isFix) {
         console.log('fixed');
         this.setData({
-          isFix:true
+          isFix: true
         });
       }
-    }else{
-      if(this.data.isFix){
+    } else {
+      if (this.data.isFix) {
         console.log('恢复');
         this.setData({
           isFix: false
         });
       }
+    }
+    
+    if (e.scrollTop > BACK_TOP_POSITION && !this.data.showBackTop){
+      console.log('显示');
+      this.setData({
+        showBackTop:true
+      })
+    } else if (e.scrollTop < BACK_TOP_POSITION && this.data.showBackTop){
+      this.setData({
+        showBackTop: false
+      })
+      console.log('hidden');
     }
   },
   /**
@@ -193,5 +208,17 @@ Page({
   },
   getTop:function(event){
     this.data.tabControlTop =event.detail.top;
+  },
+  handleBackTop:function(){
+    if(wx.pageScrollTo){
+      wx.pageScrollTo({
+        scrollTop: 0,
+      })
+    }else{
+      wx.showModal({
+        title: '提示',
+        content: '当前微信版本过低,无法使用该功能,请升级到最新微信版本重试',
+      })
+    }
   }
 })
