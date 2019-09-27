@@ -1,0 +1,23 @@
+.list-view{
+  border-top: 36rpx solid #f8f8f8; 
+}
+.list-item image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 16rpx;
+  vertical-align: middle;
+  margin-left: 30rpx;
+}
+.list-item text{
+  vertical-align: middle;
+}
+.list-item{
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #fff;
+  font-size: 32rpx;
+  border-bottom: 1px solid #f8f8f8;
+}
+.list-item:last-child{
+  border-bottom: none;
+}

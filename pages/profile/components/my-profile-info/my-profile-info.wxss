@@ -1,0 +1,21 @@
+.info{
+  display: flex;
+  font-size: 28rpx;
+  justify-content: space-between;
+  text-align: center;
+  background: #f8f8f8;
+}
+
+.money{
+  color:#ff5f3e;
+  font-weight: 700;
+  line-height: 1.5;
+  font-size: 40rpx;
+}
+
+.info-item{
+  background: #fff;
+  width:33%;
+  padding: 50rpx 0;
+}
+

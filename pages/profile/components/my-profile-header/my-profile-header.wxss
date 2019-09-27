@@ -1,0 +1,40 @@
+/* pages/profile/components/my-profile-header/my-profile-header.wxss *//* pages/profile/profile.wxss */
+.header{
+  background: #ff5777;
+  display: flex;
+  padding: 10rpx 20rpx 40rpx 30rpx;
+  color: #fff;
+}
+.header >image{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 100%;
+  background-color: #f2f2f2;
+  margin-right: 30rpx;
+}
+.header-center{
+  align-self: center;
+}
+
+.header-center .login{
+  font-size: 36rpx;
+  margin-left: 5rpx;
+}
+.header-center .desc{
+  font-size: 28rpx;
+}
+.header-center image{
+  width: 36rpx;
+  height: 36rpx;
+  position: relative;
+  top: 8rpx;
+  margin-right: 5rpx;
+}
+.header .arrow{
+  width: 60rpx;
+  height: 60rpx;
+  align-self: center;
+  background-color: #ff5777;
+  position: absolute;
+  right: 0;
+}

@@ -5,7 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    infoList: [
+        { 'title': '我的消息', 'icon': 'message.png' }, 
+        { 'title': '积分商城', 'icon': 'pointer.png' }, 
+        { 'title': '会员卡', 'icon': 'vip.png' }
+      ],
+    cartList: [
+      { 'title': '我的购物车', 'icon': 'message.png' },
+      { 'title': '下载购物APP', 'icon': 'pointer.png' }
+    ]
   },
 
   /**

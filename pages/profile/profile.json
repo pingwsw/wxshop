@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "my-header": "./components/my-profile-header/my-profile-header",
+    "my-info": "./components/my-profile-info/my-profile-info",
+    "my-list": "./components/my-profile-list/my-profile-list"
+  },
+  "navigationBarTitleText": "我的信息"
+
 }

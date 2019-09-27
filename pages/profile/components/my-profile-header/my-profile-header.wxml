@@ -1,0 +1,10 @@
+<view class="header">
+   <image src = "/assets/profile/avatar.png"/>
+   <view class="header-center">
+      <view class="login">登录/注册</view>
+        <image src="/assets/profile/phone.png"/>
+        <text class="desc">暂无绑定手机号</text>
+   </view>
+   <image class="arrow" src="/assets/common/arrow-right.png" />
+   
+</view>

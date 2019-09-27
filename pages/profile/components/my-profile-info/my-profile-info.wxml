@@ -1,0 +1,14 @@
+<view class="info">
+  <view class="info-item">
+    <text class="money">0.00</text>元
+    <view>我的余额</view>
+  </view>
+  <view class="info-item">
+    <text class="money">0.00</text>个
+    <view>我的优惠</view>
+  </view>  
+  <view class="info-item">
+    <text class="money">0.00</text>分
+    <view>我的积分</view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+<view class="list-view">
+  <block wx:for="{{list}}" wx:key="{{index}}">
+    <view class="list-item">
+      <image src="/assets/profile/{{item.icon}}" />
+      <text>{{item.title}}</text>
+    </view>
+  </block>
+</view>

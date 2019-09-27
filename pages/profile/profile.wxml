@@ -1,2 +1,5 @@
 <!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<my-header />
+<my-info />
+<my-list list="{{infoList}}"/>
+<my-list list="{{cartList}}"/>
